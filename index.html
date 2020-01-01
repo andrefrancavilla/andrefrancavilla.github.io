@@ -48,26 +48,6 @@
       .brightness:hover {
           opacity: .66;
       }
-
-      body
-      {
-        background-color: white;
-        -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-        animation-name: example;
-        animation-duration: 4s;
-      }
-      /* Safari 4.0 - 8.0 */
-      @-webkit-keyframes example {
-        from {background-color: white;}
-        to {background-color: black;}
-      }
-
-      /* Standard syntax */
-      @keyframes example {
-        from {background-color: white;}
-        to {background-color: black;}
-      }
     </style>
   </head>
 
@@ -75,9 +55,9 @@
     <section class="hero-is-primary-is-fullheight">
       <!-- Hero head: will stick at the top -->
       <div class="hero-head">
-        <nav class="navbar is-fixed-top">
-          <!-- Everything within navbar is part of the navigation bar present at the top of the webpage -->
+        <nav class="navbar is-light is-fixed-top">
           <div class="container">
+          <!-- Everything within navbar is part of the navigation bar present at the top of the webpage -->
             <div class="navbar-brand"> <!-- Everything in this div will be positioned on the left side of the navbar -->
               <a class="navbar-item">
                 <img  src="Resources\Front_Page\Images\Portfolio writing navbar.png" alt="Logo" style="max-width: 512px;">
@@ -89,8 +69,8 @@
                   <span aria-hidden="true"></span>
                 </a>
             </div>
-            <div class="navbar-end">
-              <div id="navbarMenuHeroA" class="navbar-menu">
+            <div id="navbarMenuHeroA" class="navbar-menu">
+              <div class="navbar-end">
                 <div class="navbar-item has-dropdown is-hoverable">
                   <a class="navbar-link">
                     Projects
@@ -110,20 +90,21 @@
                     </a>
                   </div>
                 </div>
-                  <div class="navbar-item">
-                    <p class="control">
-                      <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.8.0/bulma-0.8.0.zip">
-                        <span class="icon">
-                          <i class="fas fa-download"></i>
-                        </span>
-                        <span>CV</span>
-                      </a>
-                    </p>
-                  </div>
+                <div class="navbar-item">
+                  <p class="control">
+                    <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.8.0/bulma-0.8.0.zip">
+                      <span class="icon">
+                        <i class="fas fa-download"></i>
+                      </span>
+                      <span>CV</span>
+                    </a>
+                  </p>
+                </div>
               </div>
+            </div>
+          </div>
         </nav>
       </div>
-    </div>
 
      <!-- Hero content: will be in the middle -->
      <div class="hero-body bd-main-container container">
