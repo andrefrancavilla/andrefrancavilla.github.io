@@ -50,6 +50,17 @@
       .brightness:hover {
           opacity: .66;
       }
+      .description{
+        text-align: justify;
+        text-justify: inter-word;
+      }
+      a {
+        color:black;
+      }
+      ul {
+        list-style-type: square;
+        padding-left: 15px;
+      }
     </style>
   </head>
 
@@ -127,19 +138,79 @@
 
        <hr>
 
-       <div class="tile is-ancestor">
-         <div class="tile is-parent">
-           <div class="tile is-child box">
-             <p class="title">About Me</p>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+       <div class="columns">
+         <div class="column">
+           <div class="tile is-ancestor">
+             <div class="tile is-parent">
+               <article class="tile is-child box">
+                 <p class="title">About Me</p>
+                 <div class="is-divider"></div>
+                 <p class="description">
+                   I’m an american-born videogame programmer located in Italy. I’m an all round developer that knows all the ins and outs of the Unity Engine and is capable of making the best out of his tools.
+                 </p>
+                 <br>
+                 <p class="description">
+                   I started getting interested into game development when I was just 12 years old, but I became so passionate about it that in 2014 I decided that I wanted to make this my career and I self-taught myself most of the things I know today. I’ve attended high school that gave me a diploma in computer science in which I’ve learned many different things that go from networking to website development with HTML, CSS, PHP and MySQL. During my scholarship, I’ve also learned to code in Java and C++.
+                 </p>
+                 <br>
+                 <p class="description">
+                   In 2016 I founded a videogame dev team called Poison Dagger Software. This has helped me grow a lot both professionally and personally, allowing me to develop social skills thanks to the events I’ve been to to present the team’s videogame Two Sides Of Hell.
+                 </p>
+               </article>
+             </div>
            </div>
          </div>
-         <div class="tile is-parent">
-           <div class="tile is-child box">
-             <p class="title">Skills</p>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
-             <p>Suspendisse varius ligula in molestie lacinia.</p>
-           </div>
+         <div class="column">
+           <div class="tile is-ancestor">
+              <div class="tile is-parent">
+                <article class="tile is-child box">
+                  <p class="title">Skills</p>
+                  <div class="is-divider"></div>
+                  <div class="columns">
+                    <div class="column">
+                      <h1 class="is-size-5 has-text-centered">Languages</h1>
+                      <ul>
+                        <li>C#</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>HTML</li>
+                        <li>PHP</li>
+                        <li>CSS</li>
+                      </ul>
+                    </div>
+                    <div class="is-divider-vertical"></div>
+                    <div class="column">
+                      <h1 class="is-size-5 has-text-centered">Abilities & Knowledge</h1>
+                      <ul>
+                        <li>2D and 3D AI</li>
+                        <li>Advanced Game Mechanics</li>
+                        <li>UI Programming</li>
+                        <li>Programming Patterns</li>
+                        <li>Data Management</li>
+                        <li>Game Design</li>
+                        <li>Engine Tools</li>
+                        <li>Server Hosting</li>
+                        <li>Networking</li>
+                        <li>Databases</li>
+                      </ul>
+                    </div>
+                    <div class="is-divider-vertical"></div>
+                    <div class="column">
+                      <h1 class="is-size-5 has-text-centered">Software</h1>
+                      <ul>
+                        <li>Unity Engine</li>
+                        <li>Visual Studio</li>
+                        <li>VS Code</li>
+                        <li>Rider</li>
+                        <li>Krita</li>
+                        <li>Photoshop</li>
+                        <li>Apache</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
          </div>
        </div>
 
@@ -210,36 +281,35 @@
 
      <footer class="footer">
        <nav class="level">
-         <div class="level-left">
            <div class="level-item has-text-centered">
-             <div>
-               <p class="title centered">Follow Me</p>
-               <br>
-               <div class="columns">
-                 <div class="column"><span><i class="fab fa-4x fa-instagram"></i></span></div>
-                 <div class="column"><span><i class="fab fa-4x fa-facebook-square"></i></span></div>
-                 <div class="column"><span><i class="fab fa-4x fa-twitter-square"></i></span></div>
+             <div class="columns">
+               <div class="column is-half">
+                 <div>
+                   <p class="title centered">Follow Me</p>
+                   <br>
+                   <div class="columns">
+                     <div class="column is-one-quarter"><span><i class="fab fa-4x fa-instagram"></i></span></div>
+                     <div class="column is-one-quarter"><span><i class="fab fa-4x fa-facebook-square"></i></span></div>
+                     <div class="column is-one-quarter"><span><i class="fab fa-4x fa-twitter-square"></i></span></div>
+                     <div class="column is-one-quarter"><span><i class="fab fa-4x fa-github-square"></i></span></div>
+                   </div>
+                 </div>
+               </div>
+               <div class="is-divider-vertical"></div>
+               <div class="column">
+                 <div>
+                   <p class="title centered">Contact Me</p>
+                   <br>
+                   <div class="columns">
+                     <div class="column"><a href = "mailto: andre.francavilla20@gmail.com">
+                       <i class="far fa-2x fa-envelope"></i> <br>
+                       andre.francavilla20<br>@gmail.com</a>
+                     </div>
+                   </div>
+                 </div>
                </div>
              </div>
            </div>
-         </div>
-         <div class="level-right">
-           <div class="level-item has-text-centered">
-             <div>
-               <p class="title centered">Contact Me</p>
-               <br>
-               <div class="columns">
-                 <div class="column">
-                   <i class="fas fa-2x fa-phone-square"></i> <br> (Italy)<br>+393249810669
-                 </div>
-                 <div class="is-divider-vertical"></div>
-                 <div class="column">
-                   <i class="far fa-2x fa-envelope"></i> <br> andre.francavilla20<br>@gmail.com
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
        </nav>
       </footer>
 
