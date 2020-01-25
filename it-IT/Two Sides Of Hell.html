@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="has-navbar-fixed-top">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Two Sides Of Hell - Videogame Programmer Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bulma-extensions@4.0.0/dist/js/bulma-extensions.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@4.0.0/dist/css/bulma-extensions.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach( el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+
+    </script>
+    <style>
+      .center
+      {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .vl {
+        border-left: 6px solid green;
+        height: 500px;
+      }
+      .brightness:hover {
+          opacity: .66;
+      }
+      .description{
+        text-align: justify;
+        text-justify: inter-word;
+      }
+      a {
+        color:black;
+      }
+      ul {
+        list-style-type: square;
+        padding-left: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="hero-is-primary-is-fullheight">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <nav class="navbar is-light is-fixed-top">
+          <div class="container">
+          <!-- Everything within navbar is part of the navigation bar present at the top of the webpage -->
+            <div class="navbar-brand"> <!-- Everything in this div will be positioned on the left side of the navbar -->
+              <a class="navbar-item" href="index.html">
+                <img  src="Resources\Front_Page\Images\Portfolio writing navbar.png" alt="Logo" style="max-width: 512px;">
+              </a>
+                <!-- data target refers to the div with ID same as indicated. A burger is an icon that opens a side menu on devices with smalls screens. -->
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenuHeroA">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenuHeroA" class="navbar-menu">
+              <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link">
+                    Progetti
+                  </a>
+                  <div class="navbar-dropdown is-boxed">
+                    <a class="navbar-item" href="Two Sides Of Hell.html">
+                      Two Sides Of Hell
+                    </a>
+                    <a class="navbar-item" href="Simplex.html">
+                      Simplex
+                    </a>
+                    <a class="navbar-item" href="Racing Game Concept.html">
+                      Racing Game
+                    </a>
+                    <a class="navbar-item" href="">
+                      Meltdown
+                    </a>
+                    <a class="navbar-item" href="Instant Pooling.html">
+                      Instant Pooling
+                    </a>
+                  </div>
+                </div>
+                <div class="navbar-item">
+                  <p class="control">
+                    <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.8.0/bulma-0.8.0.zip">
+                      <span class="icon">
+                        <i class="fas fa-download"></i>
+                      </span>
+                      <span>CV</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+     <!-- Hero content: will be in the middle -->
+     <div class="hero-body bd-main-container container">
+       <figure class="image is-3-by-1">
+         <img src="Resources\Two Sides Of Hell\Splash Image.png">
+       </figure>
+       <br>
+       <div clas="tile-is-ancestor">
+         
+        <div class="tile is-parent">
+          <div class="tile is-child box">
+            <div class="container has-text-centered">
+             <h1 class="title">
+               Two Sides Of Hell
+             </h1>
+             <br>
+           </div>
+            <div class="columns">
+              <div class="column">
+                <div class="container has-text-left has-text-centered-mobile">
+                <h1 class="title">Info</h1>
+                <div class="is-divider"></div>
+                <p class="description">Two Sides of Hell è il progetto per il quale vado più fiero sulla quale lavoro dal 2017. È un action platformer con grafica retro che contiene aspetti del genere roguelite. Il progetto fu portato avanti perlopiù lentamente dato che all'inizio ancora frequentavo la scuola superiore, ma ad oggi ci lavoro sopra il più che posso. Ho anche creato un sito web per il gioco con 
+                  un amico <a href="http://www.poisondaggersoftware.com" target="_blank">(www.poisondaggersoftware.com)</a> dove puoi vedere tutti i dettagli a riguardo il gioco. Sto creando questo gioco con un artista che si occupa di tutta la parte visiva e una parte della musica; mentre io mi occupo dell'intero codebase, una buona parte della musica del gioco e la maggior parte del game design.
+                </p class="description">
+                </div>
+              </div>
+              <div class="column">
+                <div class="tile is-child box">
+                  <figure class="image is-16by9">
+                    <iframe class="has-ratio" width="480" height="270" src="https://www.youtube.com/embed/2MxuWYR9dWk" frameborder="0" allowfullscreen></iframe>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column">
+                <div class="tile is-child box">
+                  <figure class="image is-16by9">
+                    <img src="Resources\Two Sides Of Hell\Screenshot 1.png">
+                  </figure>
+                </div>
+              </div>
+              <div class="column">
+                <div class="container has-text-right has-text-centered-mobile">
+                 <h1 class="title">
+                   Aspetti Tecnici
+                 </h1>
+                 <div class="is-divider"></div>
+               </div>
+               <div class="container">
+                <p class="description">Questo progetto è stato una miniera di informazioni dato che ho imparato tantissime cose durante lo sviluppo. Prima di iniziare a lavorarci sopra, avevo già un buon livello di esperienza sulle spalle, ma questo progetto mi portò ad avere tantissima motivazione e mi insegnò a pensare in grande.
+                  Sto creando questo gioco con Unity, C# e, da metà 2019, Trello per la coordinazione (quando ottenni il diploma di maturità e iniziai a lavorare intenstamente sul progetto). Ho usato il Singleton Pattern per sviluppare la maggior parte delle caratteristiche relative al player, le sue abilità e i nemici.
+                  Ho programmato il campo di battaglia in un modo tale che sia generato proceduralmente e che abbia un'infinità di possiblità di configurazione che variano dalla dimensione del livello alla quantità di chest che ci potrebbero essere e l'IA si adatta automaticamente a qualisasi terrain generato.
+                  </p class="description">
+                </div>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column">
+                <div class="container has-text-left has-text-centered-mobile">
+                 <h1 class="title">
+                   Gameplay
+                 </h1>
+                 <div class="is-divider"></div>
+               </div>
+               <div class="container">
+                <p class="description">Questo progetto iniziò con l'intento di divertirci creando un gioco. Nella fase di prototipazzione, il progetto iniziò a prendere la forma di un gioco vero e proprio nella quale ho voluto imporre un principio:
+                  Tutti i mob, le armi e i livelli devono essere diversi ma avere un senso di appartenenza. Questo è perché ho reso il gioco procedurale e descrive il modo di come tutti i nemici devono interagire diversamente col player. Il Colossus carica attraverso la folla, 
+                  lo Stalker si teletrasporta dietro la schiena del player, il Crawler salta verso il player e i Redbite fastidiosi inseguono il player giù dalle piattaforme. Nell'istante in cui scrivo questo testo, il gioco conta oltre 24 mila linee di code in cui ho dedicato tantissima passione, gioia e soddisfazione giorno dopo giorno.
+                  </p class="description">
+                </div>
+              </div>
+              <div class="column">
+                <div class="tile is-child box">
+                  <figure class="image is-16by9">
+                    <img src="Resources\Two Sides Of Hell\Screenshot 2.png">
+                  </figure>
+                </div>
+              </div>
+            </div>
+        </div>
+       </div>
+     </div>
+
+     <footer class="footer">
+       <nav class="level">
+           <div class="level-item has-text-centered">
+             <div class="columns">
+               <div class="column is-half">
+                 <div>
+                   <p class="title centered">Seguimi</p>
+                   <br>
+                   <div class="columns is-mobile">
+                     <div class="column is-one-quarter"><span><i class="fab fa-4x fa-instagram"></i></span></div>
+                     <div class="column is-one-quarter"><span><i class="fab fa-4x fa-facebook-square"></i></span></div>
+                     <div class="column is-one-quarter"><span><i class="fab fa-4x fa-twitter-square"></i></span></div>
+                     <div class="column is-one-quarter"><span><i class="fab fa-4x fa-github-square"></i></span></div>
+                   </div>
+                 </div>
+               </div>
+               <div class="is-divider-vertical"></div>
+               <div class="column">
+                 <div>
+                   <p class="title centered">Contattami</p>
+                   <br>
+                   <div class="columns">
+                     <div class="column">
+                       <a href = "mailto: andre.francavilla20@gmail.com"> <i class="far fa-2x fa-envelope"></i> <br> andre.francavilla20@gmail.com</a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+       </nav>
+      </footer>
+
+    </section>
+  </body>
+</html>
+
+<!--
+References:
+  https://bulma.io/documentation/layout/hero/
+  https://bulma.io/documentation/components/navbar/
+-->

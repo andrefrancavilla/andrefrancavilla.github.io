@@ -1,0 +1,31 @@
+
+.center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vl {
+    border-left: 6px solid green;
+    height: 500px;
+}
+.brightness:hover {
+    opacity: .66;
+}
+.description{
+    text-align: justify;
+    text-justify: inter-word;
+}
+a {
+color:black;
+}
+ul {
+    list-style-type: square;
+    padding-left: 15px;
+}
+.portfolioImg{
+    width: 25vh;
+}
+.text_centered{
+    text-align: center;
+}

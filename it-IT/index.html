@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="has-navbar-fixed-top">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andre Francavilla - Videogame Programmer Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bulma-extensions@4.0.0/dist/js/bulma-extensions.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@4.0.0/dist/css/bulma-extensions.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach( el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+
+    </script>
+    <link rel="stylesheet" href="../CSS.css">
+  </head>
+
+  <body>
+    <section class="hero-is-primary-is-fullheight">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <nav class="navbar is-light is-fixed-top">
+          <div class="container">
+          <!-- Everything within navbar is part of the navigation bar present at the top of the webpage -->
+            <div class="navbar-brand"> <!-- Everything in this div will be positioned on the left side of the navbar -->
+              <a class="navbar-item" href="index.html">
+                <img  src="Resources\Front_Page\Images\Portfolio writing navbar.png" alt="Logo" style="max-width: 512px;">
+              </a>
+                <!-- data target refers to the div with ID same as indicated. A burger is an icon that opens a side menu on devices with smalls screens. -->
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenuHeroA">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenuHeroA" class="navbar-menu">
+              <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link">
+                    Progetti
+                  </a>
+                  <div class="navbar-dropdown is-boxed">
+                    <a class="navbar-item" href="Two Sides Of Hell.html">
+                      Two Sides Of Hell
+                    </a>
+                    <a class="navbar-item" href="Simplex.html">
+                      Simplex
+                    </a>
+                    <a class="navbar-item" href="Racing Game Concept.html">
+                      Racing Game
+                    </a>
+                    <a class="navbar-item" href="">
+                      Meltdown
+                    </a>
+                    <a class="navbar-item" href="Instant Pooling.html">
+                      Instant Pooling
+                    </a>
+                  </div>
+                </div>
+                <div class="navbar-item">
+                  <p class="control">
+                    <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.8.0/bulma-0.8.0.zip">
+                      <span class="icon">
+                        <i class="fas fa-download"></i>
+                      </span>
+                      <span>CV</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+     <!-- Hero content: will be in the middle -->
+     <div class="hero-body bd-main-container container">
+      <div class="container center">
+         <figure class="image portfolioImg">
+           <img class="is-rounded" src="../Portfolio.png">
+         </figure>
+      </div>
+       <br>
+       <div class="container has-text-centered">
+         <h1 class="title">
+           Andre Francavilla
+         </h1>
+         <h2 class="subtitle">
+           Videogame Programmer
+         </h2>
+       </div>
+
+       <hr>
+
+        <div class="columns">
+         <div class="column">
+           <div class="tile is-ancestor">
+             <div class="tile is-parent">
+               <article class="tile is-child box">
+                <div class="container has-text-left has-text-centered-mobile">
+                 <p class="title">Presentazione</p>
+                 <div class="is-divider"></div>
+                 <p class="description">
+                   Sono un videogame programmer nato negli Stati Uniti D'America e situato in Italia. Sono uno sviluppatore che ama conoscere fino in fondo gli strumenti che usa e si specializza nell'uso del motore di gioco Unity.
+                   <!--I’m an american-born videogame programmer located in Italy. I’m an all round developer that knows all the ins and outs of the Unity Engine and is capable of making the best out of the tools.-->
+                 </p>
+                 <br>
+                 <p class="description">
+                   Iniziai ad interessarmi al mondo del gamedev quando avevo soltanto 12 anni, ma ne divenni così tanto appassionato che, nel 2014, decisi di voler trasformare la mia passione in una carriera e iniziai a studiare da autoditatta la maggior parte delle cose che conosco oggi. Alle superiori, ho frequentato un corso di Informatica e Telecomunicazioni, dove ho ottenuto il diploma in Informatica. Tramite gli studi scolastici ho acquisito varie nozioni su Java e C++, sul networking (con certificazione CISCO) e sullo sviluppo di siti web con HTML, CSS, PHP e MySQL.
+                   <!--I started getting interested in game development when I was just 12 years old, but I became so passionate about it that in 2014 I decided that I wanted to make this my career and I self-taught myself most of the things I know today. I’ve attended high school that gave me a diploma in computer science in which I’ve learned many different things that go from networking to website development with HTML, CSS, PHP and MySQL. During my scholarship, I’ve also learned to code in Java and C++.-->
+                 </p>
+                 <br>
+                 <p class="description">
+                   Nel 2016 ho fondato un team di sviluppo di videogiochi chiamato Poison Dagger Software. Ciò mi ha aiutato a crescere tantissimo sia in ambiente professionale che personale, permettendomi di sviluppare abilità comunicative grazie agli eventi alla quale sono stato per presentare il videogioco del mio team, Two Sides Of Hell.
+                   <!--In 2016 I founded a videogame dev team called Poison Dagger Software. This has helped me grow a lot both professionally and personally, allowing me to develop social skills thanks to the events I’ve been to where I've presented my team’s videogame Two Sides Of Hell.-->
+                 </p>
+                 <br>
+                 <p style="font-size: 8pt; text-align: right;">(Per vedere tutti i miei certificati, fa riferimento al mio CV)</p>
+                </div>
+               </article>
+             </div>
+           </div>
+         </div>
+         <div class="column">
+           <div class="tile is-ancestor">
+              <div class="tile is-parent">
+                <article class="tile is-child box">
+                <div class="container has-text-left has-text-centered-mobile">
+                  <p class="title">Abilità</p>
+                </div>
+                  <div class="is-divider"></div>
+                  <div class="columns">
+                    <div class="column">
+                      <h1 class="is-size-5">Linguaggi</h1>
+                      <br>
+                      <ul>
+                        <li>C#</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>HTML</li>
+                        <li>PHP</li>
+                        <li>CSS</li>
+                        <li>MySQL</li>
+                      </ul>
+                    </div>
+                    <div class="is-divider-vertical"></div>
+                    <div class="column">
+                      <h1 class="is-size-5">Abilità e Conoscenze</h1>
+                      <br>
+                      <ul>
+                        <li>IA 2D e 3D</li>
+                        <li>Meccaniche di gioco avanzate</li>
+                        <li>UI Programming</li>
+                        <li>Programming Patterns</li>
+                        <li>Data Management</li>
+                        <li>Game Design</li>
+                        <li>Engine Tools</li>
+                        <li>Server Hosting</li>
+                        <li>Networking</li>
+                        <li>Database</li>
+                      </ul>
+                    </div>
+                    <div class="is-divider-vertical"></div>
+                    <div class="column">
+                      <h1 class="is-size-5">Software</h1>
+                      <br>
+                      <ul>
+                        <li>Unity Engine</li>
+                        <li>Visual Studio</li>
+                        <li>Rider</li>
+                        <li>Eclipse</li>
+                        <li>Krita</li>
+                        <li>Photoshop</li>
+                        <li>Trello</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+         </div>
+        </div>
+
+       <hr>
+
+       <div class="container has-text-centered">
+         <h1 class="title">
+           <p>Progetti</p>
+         </h1>
+       </div>
+       <br>
+
+       <div class="columns">
+         <div class="column is-one-quarter">
+
+          <div class="tile is-ancestor">
+            <div class="tile is-parent">
+             <div class="tile is-child box">
+               <a href = "Two Sides Of Hell.html">
+                <div class="brightness">
+                 <figure class="image is-square">
+                   <img src="Resources\Front_Page\Images\Logo TSOH.png">
+                 </figure>
+                 <p class="title center">Two Sides of Hell</p>
+                 <p class="subtitle center">Roguelite Action-Platformer</p>
+                 </div>
+                </a>
+             </div>
+            </div>
+          </div>
+
+          
+
+          <div class="tile is-ancestor">
+            <div class="tile is-parent">
+             <div class="tile is-child box">
+               <a href = "Instant Pooling.html">
+                <div class="brightness">
+                 <figure class="image is-square">
+                   <img src="Resources\Front_Page\Images\Logo Instant Pooling.png">
+                 </figure>
+                 <p class="title center">Instant Pooling</p>
+                 <p class="subtitle center">Tool per Unity Engine</p>
+                 </div>
+                </a>
+             </div>
+            </div>
+          </div>
+
+         </div>
+
+         <div class="column is-one-quarter">
+          <div class="tile is-ancestor">
+            <div class="tile is-parent">
+              <div class="tile is-child box">
+                <a href = "Simplex.html">
+                 <div class="brightness">
+                <figure class="image is-square">
+                  <img src="Resources\Front_Page\Images\Logo Simplex.png">
+                </figure>
+                <p class="title center">Simplex</p>
+                <p class="subtitle center">Mobile Puzzle Platformer</p>
+               </div>
+               </a>
+              </div>
+            </div>
+            </div>
+         </div>
+
+         <div class="column is-one-quarter">
+          <div class="tile is-ancestor">
+            <div class="tile is-parent">
+              <div class="tile is-child box">
+                <a href = "Racing Game Concept.html">
+                 <div class="brightness">
+                <figure class="image is-square">
+                  <img src="Resources\Front_Page\Images\Concept N1.png">
+                </figure>
+                <p class="title center">Racing Concept</p>
+                <p class="subtitle center">Progetto In Stile Mario-Kart</p>
+               </div>
+               </a>
+              </div>
+            </div>
+            </div>
+         </div>
+         
+         <div class="column is-one-quarter">
+            <div class="tile is-ancestor">
+              <div class="tile is-parent">
+                <div class="tile is-child box">
+                  <a href = "">
+                  <div class="brightness">
+                  <figure class="image is-square">
+                    <img src="Resources\Front_Page\Images\Logo Fantasy Network.png">
+                  </figure>
+                  <p class="title center">Meltdown</p>
+                  <p class="subtitle center">3D Action Platformer</p>
+                </div>
+                </a>
+              </div>
+            </div>
+          </div>
+         </div>
+       </div>
+  </div>
+
+     <footer class="footer">
+       <nav class="level">
+           <div class="level-item has-text-centered">
+             <div class="columns">
+               <div class="column is-half">
+                 <div>
+                   <p class="title centered">Seguimi</p>
+                   <br>
+                   <div class="columns is-mobile">
+                     <div class="column is-one-quarter"><span><i class="fab fa-4x fa-instagram"></i></span></div>
+                     <div class="column is-one-quarter"><span><i class="fab fa-4x fa-facebook-square"></i></span></div>
+                     <div class="column is-one-quarter"><span><i class="fab fa-4x fa-twitter-square"></i></span></div>
+                     <div class="column is-one-quarter"><span><i class="fab fa-4x fa-github-square"></i></span></div>
+                   </div>
+                 </div>
+               </div>
+               <div class="is-divider-vertical"></div>
+               <div class="column">
+                 <div>
+                   <p class="title centered">Contattami</p>
+                   <br>
+                   <div class="columns">
+                     <div class="column">
+                       <a href = "mailto: andre.francavilla20@gmail.com"> <i class="far fa-2x fa-envelope"></i> <br> andre.francavilla20@gmail.com</a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+       </nav>
+      </footer>
+
+    </section>
+  </body>
+</html>
+
+<!--
+References:
+  https://bulma.io/documentation/layout/hero/
+  https://bulma.io/documentation/components/navbar/
+-->
