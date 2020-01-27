@@ -38,49 +38,44 @@
     </script>
     <link rel="stylesheet" href="CSS.css">
     <style>
-      img {
+      .langFlag {
         display: block;
         margin-left: auto;
         margin-right: auto;
-      }
-      .fadeBottom {
-        white-space: nowrap;
-        overflow: hidden;
-        animation-duration: 1.5s;
-        animation-name: FadeBottom;
-      }
-      .fade{
-        animation-duration: 3s;
-        animation-name: Fade;
-      }
-      h1 {
-        font-size: small;
+        animation-duration: 0.1s;
+        animation-fill-mode: forwards;  
+        animation-name: hoveringOut;
       }
 
-      @keyframes FadeBottom {
-        from {
-          margin-top: 15%;
-          opacity: 0;
-          width: 1000%; 
-        }
-
-        to {
-          margin-left: 0%;
-          opacity: 1;
-          width: 100%;
-        }
+      .langFlag:hover {
+        animation-duration: 0.1s;
+        animation-fill-mode: forwards;  
+        animation-name: hoveringIn;
+        
       }
 
-      @keyframes Fade {
-        from {
-          opacity: 0;
+      @keyframes hoveringIn
+      {
+        from
+        {
+          border-radius: 0%;
         }
-
-        to {
-          opacity: 1;
+        to
+        {
+          border-radius: 10%;
         }
       }
-      
+      @keyframes hoveringOut
+      {
+        from
+        {
+          border-radius: 10%;
+        }
+        to
+        {
+          border-radius: 1%;
+        }
+      }
       
     </style>
   </head>
@@ -92,7 +87,7 @@
         <div class="hero-body bd-main-container container">
          <div class="container center">
             <figure class="image portfolioImg fade">
-              <img class="is-rounded" src="Portfolio.png">
+              <img class="portfolioImg" src="Portfolio.png">
             </figure>
          </div>
          <br>
@@ -112,7 +107,7 @@
               <a href="en-US/index.html">
                 <div class="brightness text_centered">
                   <figure class="image is-2by1 fade">
-                    <img src="en-US.png">
+                    <img class="langFlag" src="en-US.png">
                   </figure>
                   <br>
                   <div class="center">
@@ -128,7 +123,7 @@
               <a href="it-IT/index.html">
                 <div class="brightness text_centered">
                   <figure class="image is-2by1 fade">
-                    <img src="it-IT.png">
+                    <img class="langFlag" src="it-IT.png">
                   </figure>
                   <br>
                   <div class="center">

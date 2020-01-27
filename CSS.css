@@ -25,7 +25,41 @@ ul {
 }
 .portfolioImg{
     width: 25vh;
+    border-radius: 20%;
 }
 .text_centered{
     text-align: center;
+}
+.fadeBottom {
+  white-space: nowrap;
+  overflow: hidden;
+  animation-duration: 1.5s;
+  animation-name: FadeBottom;
+}
+.fade{
+  animation-duration: 2s;
+  animation-name: Fade;
+}
+@keyframes FadeBottom {
+  from {
+    margin-top: 15%;
+    opacity: 0;
+    width: 1000%; 
+  }
+
+  to {
+    margin-left: 0%;
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@keyframes Fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
