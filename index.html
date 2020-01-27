@@ -37,6 +37,52 @@
 
     </script>
     <link rel="stylesheet" href="CSS.css">
+    <style>
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .fadeBottom {
+        white-space: nowrap;
+        overflow: hidden;
+        animation-duration: 1.5s;
+        animation-name: FadeBottom;
+      }
+      .fade{
+        animation-duration: 3s;
+        animation-name: Fade;
+      }
+      h1 {
+        font-size: small;
+      }
+
+      @keyframes FadeBottom {
+        from {
+          margin-top: 15%;
+          opacity: 0;
+          width: 1000%; 
+        }
+
+        to {
+          margin-left: 0%;
+          opacity: 1;
+          width: 100%;
+        }
+      }
+
+      @keyframes Fade {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+      
+      
+    </style>
   </head>
 
   <body>
@@ -45,12 +91,12 @@
        <!-- Hero content: will be in the middle -->
         <div class="hero-body bd-main-container container">
          <div class="container center">
-            <figure class="image portfolioImg">
+            <figure class="image portfolioImg fade">
               <img class="is-rounded" src="Portfolio.png">
             </figure>
          </div>
          <br>
-         <div class="container has-text-centered">
+         <div class="container has-text-centered fade">
            <h1 class="title">
              Andre Francavilla
            </h1>
@@ -59,34 +105,34 @@
            </h2>
          </div>
   
-         <hr>
+         <hr class="fade">
   
          <div class="columns is-mobile">
            <div class="column">
               <a href="en-US/index.html">
                 <div class="brightness text_centered">
-                  <figure class="image is-2by1">
+                  <figure class="image is-2by1 fade">
                     <img src="en-US.png">
                   </figure>
                   <br>
                   <div class="center">
-                    <h1 class="title">English (US)</h1>
+                    <h1 class="title fadeBottom">English (US)</h1>
                   </div>
                 </div>
               </a>
            </div>
            
-           <div class="is-divider-vertical"></div>
+           <div class="is-divider-vertical fade"></div>
            
            <div class="column">
               <a href="it-IT/index.html">
                 <div class="brightness text_centered">
-                  <figure class="image is-2by1">
+                  <figure class="image is-2by1 fade">
                     <img src="it-IT.png">
                   </figure>
                   <br>
                   <div class="center">
-                    <h1 class="title">Italiano (IT)</h1>
+                    <h1 class="title fadeBottom">Italiano (IT)</h1>
                   </div>
                 </div>
               </a>
@@ -102,4 +148,6 @@
 References:
   https://bulma.io/documentation/layout/hero/
   https://bulma.io/documentation/components/navbar/
+
+  https://icons8.com/cssload/en/animated-text
 -->
